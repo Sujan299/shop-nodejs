@@ -1,0 +1,14 @@
+extends layouts/main-layout.pug
+block content
+    if prods.length > 0
+        each product in prods
+            main
+                .card 
+                    article
+                        h3.name_of_card #{product.title}
+                        img.img_of_card(src="https://img.freepik.com/free-photo/book-composition-with-open-book_23-2147690555.jpg", alt="")
+                        h4.pricing $19.9
+                        .action_to_card 
+                            button.btn Add Cart
+    else 
+        h1 Products are not available

@@ -1,0 +1,19 @@
+<main>
+    {{#if hasProducts}}
+        {{#each prods}}
+            <div class="card">
+                <article>
+                    <h3 class="name_of_card">{{this.title}}</h3>
+                    <img src="https://img.freepik.com/free-photo/book-composition-with-open-book_23-2147690555.jpg" alt=""
+                        class="img_of_card">
+                    <h4 class="pricing">$19.99</h4>
+                    <div class="action_to_card">
+                        <button class="btn">Add Cart</button>
+                    </div>
+                </article>
+            </div>
+        {{/each}}
+    {{else}}
+    <h1>No product found</h1>
+    {{/if}}
+</main>
